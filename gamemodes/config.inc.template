@@ -1,0 +1,46 @@
+// #define DEBUG_MODE
+
+// #define _DEBUG 7
+// #define RUN_TESTS
+
+#undef MAX_PLAYERS
+    #define MAX_PLAYERS (50)
+
+// YSI
+#define CGEN_MEMORY (20000) // needs looking at, no clue why we had to increase this. YSI said so.
+#define YSI_NO_OPTIMISATION_MESSAGE
+#define YSI_YES_VERSION_CHECK
+#define YSI_NO_CACHE_MESSAGE
+#define YSI_NO_HEAP_MALLOC
+#define YSI_NO_MODE_CACHE
+
+#define SETUP_TABLE (true)
+
+// BCrypt
+#define BCRYPT_COST 12
+
+// Streamer
+#if !defined STREAMER_OBJECT_SD
+	#define STREAMER_OBJECT_SD 300.0
+#endif
+#if !defined STREAMER_OBJECT_DD
+	#define STREAMER_OBJECT_DD 300.0
+#endif
+
+// MySQL Prepared Statement
+#define MYSQL_PREPARE_DEBUG 	(false)
+#define MAX_STATEMENTS          100
+
+// MySQL
+#define MYSQL_CHARSET           "tis620"
+
+// Server Settings
+#define SERVER_NAME 			"Y-Core"
+#define SERVER_ALIAS            "Y"
+#define SERVER_MODE 			"Roleplay"
+#define SERVER_LANGUAGE			"TH"
+#define SERVER_WEBSITE			"-"
+
+#define SCRIPT_VERSION_MAJOR	1
+#define SCRIPT_VERSION_MINOR	0
+#define SCRIPT_VERSION_PATCH	0

@@ -1,0 +1,72 @@
+#
+# Package only files
+#
+
+# Compiled Bytecode, precompiled output and assembly
+*.amx
+*.lst
+*.asm
+
+# Vendor directory for dependencies
+dependencies/
+
+# Dependency versions lockfile
+pawn.lock
+
+
+#
+# Server/gamemode related files
+#
+
+# compiled settings file
+# keep `samp.json` file on version control
+# but make sure the `rcon_password` field is set externally
+# you can use the environment variable `SAMP_RCON_PASSWORD` to do this.
+server.cfg
+
+# Plugins directory
+plugins/*.*
+
+# binaries
+*.exe
+*.dll
+*.so
+announce
+samp03svr
+samp-npc
+
+# logs
+logs/
+server_log.txt
+crashinfo.txt
+
+# Ban list
+samp.ban
+
+#
+# Common files
+#
+
+*.sublime-workspace
+
+#
+# Config files
+#
+.vscode
+gamemodes/module_template
+gamemodes/config.inc
+mysql.ini
+
+#
+# Legacy sampvoice
+#
+svlog.txt
+!plugins/
+!plugins/sampvoice.*
+
+filterscripts/fs-sampvoice-module
+!filterscripts/sampvoice.amx
+
+gamemodes/Y/BLESS/inventory
+gamemodes/Y/BLESS/jobs
+legacy/foreach.inc

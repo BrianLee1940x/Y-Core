@@ -1,0 +1,31 @@
+site: ""
+user: Brian-Less
+repo: Y-Core
+entry: gamemodes\ycore.pwn
+output: gamemodes\ycore.amx
+dependencies:
+- sampctl/samp-stdlib
+- Zeex/samp-plugin-crashdetect:v4.20
+- pawn-lang/YSI-Includes:v5.05.0403
+- Y-Less/sscanf:2.10.2-r2
+- pBlueG/SA-MP-MySQL:R41-4
+- PatrickGTR/MySQL-Prepared-Statements
+- Sreyas-Sreelal/samp-bcrypt:0.3.4
+- Southclaws/samp-logger:1.5.0
+- samp-incognito/samp-streamer-plugin:v2.9.5
+- katursis/Pawn.RakNet:1.5.1
+- Brian-Less/cec
+local: true
+runtime:
+  version: 0.3.7
+  mode: server
+  rcon_password: password
+  port: 7777
+  filterscripts:
+  - sampvoice
+  plugins:
+  - sampvoice
+builds:
+- name: dev
+  includes:
+  - legacy
