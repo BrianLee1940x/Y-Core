@@ -226,9 +226,8 @@ SetPlayerSpawnDialog(playerid)
                     Float:Z, 
                     Float:A;
 			    
-                // TODO: ระบบ VIP
-                /*if(true != true)  
-                    return SendErrorMsg(playerid, "คุณไม่มีสถานะ VIP ระดับพรีเมียม!");*/
+                if(VIP_GetPlayerLevel(playerid) < 6)  
+                    return SendErrorMsg(playerid, "คุณไม่มีสถานะ VIP ระดับพรีเมียม!");
             
 			    GetPlayerPos(playerid, X, Y, Z);
 			    GetPlayerFacingAngle(playerid, A);

@@ -20,6 +20,10 @@ hook OnMySQLSetupTable()
     mysql_tquery_file(Database_GetHandle(), "db/player_stats.sql");
     Logger_Log("setting up 'player stats' table...");
 
+    // player vips table.
+    mysql_tquery_file(Database_GetHandle(), "db/vips.sql");
+    Logger_Log("setting up 'player vips' table...");
+
     // --------------------------------------------------------------------------------------------
     // ADMIN
     // --------------------------------------------------------------------------------------------

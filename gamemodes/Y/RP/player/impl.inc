@@ -10,3 +10,4 @@
 #include "character\impl"
 #include "spawn\impl"
 #include "skin\impl"
+#include "vip\impl"

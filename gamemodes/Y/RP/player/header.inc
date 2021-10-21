@@ -10,3 +10,4 @@
 #include "character\header"
 #include "spawn\header"
 #include "skin\header"
+#include "vip\header"
