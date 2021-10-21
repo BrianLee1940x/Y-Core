@@ -2,4 +2,5 @@
 	#undef _inc_header
 #endif
 
-#include "notify\header"
+// ยังไม่สมบูรณ์ เหลือดักตัวแปรต่าง ๆ เวลาผู้เล่นสลับกันเข้าออกเกม
+//#include "notify\header"
