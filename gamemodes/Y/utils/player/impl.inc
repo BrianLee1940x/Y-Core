@@ -15,7 +15,7 @@ stock ClearChatForPlayer(playerid)
     params:
     @forceCheck ค่าเริ่มต้น (true)
 
-    ถ้าเป็น false จะตรวจสอบ vw และ int อีกรอ
+    ถ้าเป็น false จะตรวจสอบ vw และ int อีกรอบ
     แต่การดึงลูปจาก StreamedPlayer นั้นหมายความว่าผู้เล่นมองเห็นกันแล้ว ไม่จำเป็นต้องตรวจสอบซ้ำ
  */
 stock Player_IsNearPlayer(playerid, targetid, Float:radius, forceCheck = true)
